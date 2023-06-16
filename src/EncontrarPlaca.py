@@ -38,7 +38,10 @@ def buscaRetanguloPlaca(source):
             break
 
 
-        # area de localização 720p
+        # area de localização 720p fiorino
+        #area = frame[450:, 300:800]
+
+        # area de localização 720p video original
         area = frame[500:, 300:800]
 
         # area de localização 480p
@@ -109,20 +112,28 @@ def reconhecimentoOCR():
     if img_roi_ocr is None:
         return
 
-    config = r'-c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 --psm 6'
+    config = r'-c tessedit_char_whitelist=ABCDEFGHJKLMNOPQRSTUVWXYZ1234567890 --psm 6'
     saida = pytesseract.image_to_string(img_roi_ocr, lang='eng', config=config)
 
     gravar_saida(saida)
     # return saida
 
-def gravar_saida(saida):
-    if os.path.isdir('Arquivos')==False:
-        os.popen('mkdir Arquivos')
+import os
 
-    with open("Arquivos\placas.txt", 'w', encoding='utf-8') as arq:
-        # CORPO DO WITH
+def gravar_saida(saida):
+    if not os.path.isdir('Arquivos'):
+        os.mkdir('Arquivos')
+
+    # Verificar se o arquivo já existe
+    arquivo_existe = os.path.isfile('Arquivos/placas.txt')
+
+    with open("Arquivos/placas.txt", 'a', encoding='utf-8') as arq:
+        if arquivo_existe:
+            # Adicionar uma quebra de linha antes de escrever a nova saída
+            arq.write('\n')
         arq.write(saida)
-        print (saida)
+        print(saida)
+
 
 
 if __name__ == "__main__":
