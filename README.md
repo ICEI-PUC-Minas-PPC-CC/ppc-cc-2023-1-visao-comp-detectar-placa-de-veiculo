@@ -1,19 +1,17 @@
-# TÍTULO DO PROJETO
+# DETECÇÃO DE PLACA DE VEÍCULOS
 
 `PPC-CC: PUC Poços de Caldas - Ciência da Computação`
-`Disciplina: NOME DA DISCIPLINA`
-`2021 - Semestre 1`
+`Disciplina: Visão Computacional e Realidade Misturada`
+`2023 - Semestre 1`
 
 ## Integrantes
 
-- Jeff Bezos
-- Bill Gates
-- Larry Ellison
-- Mark Zuckerberg
+- Bruno Fernando Cândido
+- Marcus Vinícius Ribeiro
 
 ## Professor
 
-- Mestre Yoda
+- Will Machado
 
 # Documentação
 
