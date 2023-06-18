@@ -15,7 +15,7 @@
 
 # Demonstração de Execução
 
-![alt-text]([https://github.com/angelcomp/Projeto_final_LAEDII/blob/main/gif_readme/gif_restaurante%5B2%5D.gif](https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2023-1-visao-comp-detectar-placa-de-veiculo/blob/main/presentation/VisaoComp.gif))
+![alt-text](https://github.com/ICEI-PUC-Minas-PPC-CC/ppc-cc-2023-1-visao-comp-detectar-placa-de-veiculo/blob/main/presentation/VisaoComp.gif)
 
 # Código
 
